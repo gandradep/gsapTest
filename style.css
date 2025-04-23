@@ -1,0 +1,29 @@
+body {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+  color: white;
+}
+.bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 80%;
+  height: auto;
+  pointer-events: none; /* so it doesn’t interfere with clicks */
+  z-index: 0;
+}
+.title{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500; /* 'medium' maps to 500 */
+  font-size: 60px;
+  line-height: 64px;
+  display: inline-block;
+  text-align: left;
+  width: 75%;
+  z-index: 1;
+}
