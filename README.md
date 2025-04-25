@@ -1,2 +1,5 @@
 # Test exercise: Animating text using GSAP
 This code only works on localhost because it uses SplitText(), which is only available for testing and not for deployment. In case it gets deployed, the proper license is required.
+
+## Design thinking
+For this task, I started by reading the quick start guide of GSAP, where I discovered that the SplitText plugin could achieve the desired text animation effect, similar to the examples provided by the company. I then consulted the SplitText manual to understand how to properly call functions and apply effects. To ensure I captured the details of the animation, I recorded the screen of the example, slowed down the playback, and focused on the finer details of the text animation. Finally, I implemented the animation on my test text based on these insights.
