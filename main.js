@@ -9,20 +9,28 @@ document.fonts.ready.then(() => {
   });
   let chars = mySplitText.chars;
 
-  gsap.from(chars, {
-    duration: 3,
-    opacity: 0,
-    scale: 0,
-    y: 80,
-    rotationX: 180,
-    transformOrigin: "0% 50% -50",
-    ease: "back",
-    stagger: 0.05,
-    onComplete: () => {
-      mySplitText.revert();
-      text.removeAttribute("aria-hidden");
+  gsap.fromTo(chars,
+    {
+      opacity: 0,
+      scale: 0,
+      y: 100,
+      x:50,
+      rotationX: -90,
+      rotationZ: -45,
+      transformOrigin: "50% 50%"
+    },
+    {
+      duration: 1,
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      x:0,
+      rotationX: 0,
+      rotationZ: 0,
+      ease: "power1.out",
+      stagger: 0.01,
     }
-  });
+  );
 });
 
 
